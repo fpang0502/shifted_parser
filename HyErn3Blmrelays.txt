@@ -1,0 +1,12 @@
+deviceID	localDate	localStart	localEnd	UTC	setTime	actualDuration	reason	watthourDuration
+HyErn3Blm	2018-07-03	15:30:42	15:45:42	2018-07-03T01:30:42.000Z	900	900	api	watthourDuration
+HyErn3Blm	2018-07-03	16:30:27	16:32:44	2018-07-03T02:30:27.000Z	900	137	api	watthourDuration
+HyErn3Blm	2018-07-04	15:19:50	15:23:28	2018-07-04T01:19:50.000Z	900	218	api	watthourDuration
+HyErn3Blm	2018-07-04	15:33:02	15:33:23	2018-07-04T01:33:02.000Z	900	21	api	watthourDuration
+HyErn3Blm	2018-07-05	10:34:52	10:34:53	2018-07-05T20:34:52.000Z	0	1	ffr	watthourDuration
+HyErn3Blm	2018-07-05	10:34:53	11:47:42	2018-07-05T20:34:53.000Z	-1530822890	4369	ffrr	watthourDuration
+HyErn3Blm	2018-07-08	21:12:33	21:32:38	2018-07-08T07:12:33.000Z	0	1205	ffr	watthourDuration
+HyErn3Blm	2018-07-09	13:34:05	14:02:40	2018-07-09T23:34:05.000Z	0	1715	ffr	watthourDuration
+HyErn3Blm	2018-07-10	14:02:41	14:02:41	2018-07-10T00:02:41.000Z	-1531180954	0	ffrr	watthourDuration
+HyErn3Blm	2018-07-10	14:02:45	14:02:52	2018-07-10T00:02:45.000Z	0	7	ffr	watthourDuration
+HyErn3Blm	2018-07-10	14:02:52	
