@@ -1,0 +1,1 @@
+deviceID	localDate	localStart	localEnd	UTC	setTime	actualDuration	reason	watthourDuration

@@ -1,0 +1,242 @@
+{
+    "statuses": [
+        {
+            "date": "2018-07-18T20:22:29.000Z",
+            "device": "HyErn3Blm",
+            "id": "Bkh5b7Tm7",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "reboot",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T20:42:46.000Z",
+            "device": "HyErn3Blm",
+            "id": "HkaBIXTQX",
+            "info": {
+                "on": false,
+                "toggleAt": 1531947466
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T20:46:31.000Z",
+            "device": "HyErn3Blm",
+            "id": "HyCQwmT77",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T20:47:16.000Z",
+            "device": "HyErn3Blm",
+            "id": "BJoLDQpQX",
+            "info": {
+                "on": false,
+                "toggleAt": 1531947736
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T20:55:57.000Z",
+            "device": "HyErn3Blm",
+            "id": "HkuvKQT7Q",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T21:04:57.000Z",
+            "device": "HyErn3Blm",
+            "id": "B1EKsm6X7",
+            "info": {
+                "on": false,
+                "toggleAt": 1531948797
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T21:19:57.000Z",
+            "device": "HyErn3Blm",
+            "id": "Bys-yEaXX",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T21:53:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "ryG084aQ7",
+            "info": {
+                "on": false,
+                "toggleAt": 1531951691
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T22:08:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "HyuU9VpX7",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T22:47:16.000Z",
+            "device": "HyErn3Blm",
+            "id": "ByyK7r6Qm",
+            "info": {
+                "on": false,
+                "toggleAt": 1531954936
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T22:47:36.000Z",
+            "device": "HyErn3Blm",
+            "id": "HyQqmrpXX",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T23:38:48.000Z",
+            "device": "HyErn3Blm",
+            "id": "SJSqkL6XQ",
+            "info": {
+                "on": false,
+                "toggleAt": 0
+            },
+            "reason": "ffr",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T23:38:48.000Z",
+            "device": "HyErn3Blm",
+            "id": "r1lr91LpmQ",
+            "info": {
+                "frequency": 59.975
+            },
+            "reason": "ffr",
+            "state": "Active",
+            "type": "trigger"
+        },
+        {
+            "date": "2018-07-18T23:40:40.000Z",
+            "device": "HyErn3Blm",
+            "id": "HkHZg86mX",
+            "info": {
+                "on": false,
+                "toggleAt": 1531957249
+            },
+            "reason": "ffrr",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-18T23:40:40.000Z",
+            "device": "HyErn3Blm",
+            "id": "SJerbeLTQm",
+            "info": {
+                "frequency": 60.01
+            },
+            "reason": "ffrr",
+            "state": "Active",
+            "type": "trigger"
+        },
+        {
+            "date": "2018-07-18T23:40:49.000Z",
+            "device": "HyErn3Blm",
+            "id": "S1s-lIamX",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-19T04:14:33.000Z",
+            "device": "HyErn3Blm",
+            "id": "rkQExcamm",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-19T04:17:18.000Z",
+            "device": "HyErn3Blm",
+            "id": "r1OCxqa7Q",
+            "info": {
+                "on": false,
+                "toggleAt": 1531974738
+            },
+            "reason": "api",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-19T04:32:18.000Z",
+            "device": "HyErn3Blm",
+            "id": "ryyP4q6mm",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "relay"
+        },
+        {
+            "date": "2018-07-19T20:22:35.000Z",
+            "device": "HyErn3Blm",
+            "id": "rJXX7uRQX",
+            "info": {
+                "on": true,
+                "toggleAt": 0
+            },
+            "reason": "reboot",
+            "state": "Active",
+            "type": "relay"
+        }
+    ]
+}
