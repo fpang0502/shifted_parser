@@ -1,4 +1,4 @@
-import json, os, pendulum, requests
+import json, requests, pytz, datetime
 from increments import getIncrements
 
 def main():
@@ -6,55 +6,42 @@ def main():
 		title = input.readline()
 		entireFile = input.read()
 		inputList=entireFile.split('\n')
-		tomorrow = pendulum.tomorrow()
-		tomorrowsDate = tomorrow.to_date_string()
-		today = pendulum.today()
-		todaysDate = today.to_date_string()
 		for line in inputList:
 			if line.strip():
 				info = line.split()
 				device = info[0]
-				timezone = info[1]
+				specifiedTimezone = info[1]
 				startDate = info[2]
 				lastUpdated = info[3]
-				collectData(device, timezone, lastUpdated, tomorrowsDate)
+				fmt = '%Y-%m-%d %H:%M:%S'
+				fmtDate = '%Y-%m-%d'
+				temp_dt = datetime.datetime.utcnow().strftime(fmt)
+				date_time = temp_dt.split()
+				date = date_time[0].split('-')
+				time = date_time[1].split(':')
+				utcToday_dt = datetime.datetime(int(date[0]),int(date[1]),int(date[2]),int(time[0]),int(time[1]),int(time[2]), tzinfo=pytz.utc)
+				locToday_dt = utcToday_dt.astimezone(pytz.timezone(specifiedTimezone))
+				locToday = locToday_dt.strftime(fmtDate)
+				twoDaysAhead_dt = (locToday_dt + datetime.timedelta(days=2))
+				twoDaysAhead = twoDaysAhead_dt.strftime(fmtDate)
+				print(locToday)
+				print(twoDaysAhead)
+				collectData(device, specifiedTimezone, lastUpdated, twoDaysAhead)
 				getIncrements(device)
-				updateInputMaster(device, todaysDate)
+				updateInputMaster(device, locToday)
 
-def readLastLines(file, lines):
-	with open(file, "r") as f:
-		f.readline()
-		contents = f.readlines()[-lines:]
-		return contents
-
-def updateInputMaster(device, lastUpdated):
-	entireText =''
-	with open("input-master.db", "r") as f:
-		title = f.readline()
-		entireText += title
-		devices = f.readlines()
-		for i in range(len(devices)):
-			if device in devices[i]:
-				temp = devices[i].strip('\n')
-				print(repr(temp))
-				indexes = temp.split()
-				temp = temp.replace(indexes[3], lastUpdated)
-				entireText += temp
-			else:
-				entireText += devices[i]
-	with open("input-master.db", "w+") as f:
-		f.write(entireText)
-
-def isUnique(filename, lines, textToSend):
-	linesOfFile = readLastLines(filename, lines)
-	found = False
-	for i in range(len(linesOfFile)):
-		if textToSend == linesOfFile[i]:
-			found = True
-	if found == False:
-		return True
-	elif found == True:
-		return False
+def update_data(device, startDate, endDate):
+	# Update the json_data with the respective date given
+	headers = {
+	    'Authorization': 'Bearer: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6InJKZVBud3JRUSIsImV4cCI6MTU2Mjk3NjIxNiwiaWF0IjoxNTMxNDQwMjE2fQ.hmngHavclf9WTvrzn846yP3xRGbYSDEIRovcFw9KlrY',
+	    'Content-Type': 'application/json',
+	}
+	url = "https://api.automategreen.com/v1/statuses?device=" + device
+	date = "&date[start]=" + startDate + "&date[end]=" + endDate
+	response = requests.get(url+date, headers=headers)
+	json_data = json.loads(response.text)
+	with open("api_data.json", "w") as f:
+		json.dump(json_data, f, indent=4, sort_keys=True)
 
 def collectData(device, timezone, startDate, endDate):
 	update_data(device, startDate, endDate)
@@ -86,27 +73,16 @@ def collectData(device, timezone, startDate, endDate):
 		writeUpdates(device, updateString, updateFile, updateArray, timezone)
 		writeRelays(device, relayString, relayFile, relayArray, triggerArray, timezone)
 
-def update_data(device, startDate, endDate):
-	# Update the json_data with the respective date given
-	headers = {
-	    'Authorization': 'Bearer: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6InJKZVBud3JRUSIsImV4cCI6MTU2Mjk3NjIxNiwiaWF0IjoxNTMxNDQwMjE2fQ.hmngHavclf9WTvrzn846yP3xRGbYSDEIRovcFw9KlrY',
-	    'Content-Type': 'application/json',
-	}
-	url = "https://api.automategreen.com/v1/statuses?device=" + device
-	date = "&date[start]=" + startDate + "&date[end]=" + endDate
-	response = requests.get(url+date, headers=headers)
-	json_data = json.loads(response.text)
-	with open("api_data.json", "w") as f:
-		json.dump(json_data, f, indent=4, sort_keys=True)
-
 def writeUpdates(device, updateString, updateFile, updateArray, timezone):
 	# Write the update array to deal with duplicates
 
 	for i in range(len(updateArray)):
 		utc = updateArray[i]["date"]
 		local_date = getLocalDateTime(utc, timezone, "date")
+		#print(utc)
+		#print(local_date)
 		local_time = getLocalDateTime(utc, timezone, "time")
-
+		#print(local_time + '\n')
 		current = updateArray[i]["info"]["current"]
 		flow = updateArray[i]["info"]["flow"]
 		if flow == None:
@@ -184,6 +160,23 @@ def writeRelays(device, relayString, outfile, relayArray, triggerArray, timezone
 				if isUnique(relayString, 20, textToSend):
 					outfile.write(textToSend)
 
+def readLastLines(file, lines):
+	with open(file, "r") as f:
+		f.readline()
+		contents = f.readlines()[-lines:]
+		return contents
+
+def isUnique(filename, lines, textToSend):
+	linesOfFile = readLastLines(filename, lines)
+	found = False
+	for i in range(len(linesOfFile)):
+		if textToSend == linesOfFile[i]:
+			found = True
+	if found == False:
+		return True
+	elif found == True:
+		return False
+
 def matchToTrigger(utcTime, triggerArray):
 	# Match the given UTC time to the time in the trigger array
 	for i in range(len(triggerArray)):
@@ -194,28 +187,37 @@ def getLocalDateTime(utc, timezone, option):
 	# Return the local date or time given UTC
 	utc = utc.replace(".000Z", "")
 	date_time = utc.split("T")
+	#print(date_time)
 	date = date_time[0].split("-")
 	time = date_time[1].split(":")
-	pendulum_datetime = pendulum.datetime(int(date[0]), int(date[1]), int(date[2]), int(time[0]), int(time[1]), int(time[2]), tz = timezone)
-	local_date = pendulum_datetime.to_date_string()
-	pendulum_time = pendulum_datetime.to_time_string()
-	string = str(pendulum_datetime)
-	addsub = int(string[20:22])
-	temp = str(pendulum_time)
-	hour = int(temp[0:2])
-	if "+" in str(pendulum_datetime):
-		hour += addsub
-	else:
-		hour -= addsub
-	if hour>23:
-		hour -=24
-	elif hour<0:
-		hour +=24
-	local_time = str(hour).zfill(2)+str(pendulum_time[2:])
+	utc_dt = datetime.datetime(int(date[0]), int(date[1]), int(date[2]), int(time[0]), int(time[1]), int(time[2]), tzinfo=pytz.utc)
+	local_dt = utc_dt.astimezone(pytz.timezone(timezone))
+	local_date = local_dt.strftime('%Y-%m-%d')
+	local_time = local_dt.strftime('%H:%M:%S')
+	#print(local_date)
+	#print(local_time)
+	#print(local_date, local_time, '\n')
 	if option == "date":
 		return local_date
 	elif option =="time":
 		return local_time
+
+def updateInputMaster(device, lastUpdated):
+	entireText =''
+	with open("input-master.db", "r") as f:
+		title = f.readline()
+		entireText += title
+		devices = f.readlines()
+		for i in range(len(devices)):
+			if device in devices[i]:
+				temp = devices[i].strip('\n')
+				indexes = temp.split()
+				temp = temp.replace(indexes[3], lastUpdated)
+				entireText += temp
+			else:
+				entireText += devices[i]
+	with open("input-master.db", "w+") as f:
+		f.write(entireText)
 
 if __name__ == "__main__":
 	main()

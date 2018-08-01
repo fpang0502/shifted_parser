@@ -1,15 +1,14 @@
-import pendulum, json
+import json
 
 def getIncrements(device):
 	with open("./" + device + "/" + device + "updates.db", "r") as f:
 		labels = f.readline()
-		lines = f.read()
-		lines = lines.split('\n')
+		lines = f.readlines()
 		current =[]
 		power = []
 		local_date = []
-		local_time = []
-		utcTime = []
+		#local_time = []
+		#utcTime = []
 		appendLists(lines, current, power, local_date)
 		writeIncrements(device, current, power, local_date)
 
