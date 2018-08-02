@@ -1980,6 +1980,1336 @@
             "reason": "auto",
             "state": "Active",
             "type": "update"
+        },
+        {
+            "date": "2018-08-02T02:13:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "rkypd1xSQ",
+            "info": {
+                "current": 0.81,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 48.83,
+                "temperature": 99,
+                "toggleAt": 0,
+                "voltage": 244.37
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T02:28:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "BJzSnkxSQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 0,
+                "temperature": 103,
+                "toggleAt": 0,
+                "voltage": 243.36
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T02:43:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "rkwpJglH7",
+            "info": {
+                "current": 0.04,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 2.63,
+                "temperature": 103,
+                "toggleAt": 0,
+                "voltage": 243.87
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T02:58:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "rk3r7ger7",
+            "info": {
+                "current": 3.35,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 198.86,
+                "temperature": 108,
+                "toggleAt": 0,
+                "voltage": 238.37
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T03:13:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "HyJ0IgxrQ",
+            "info": {
+                "current": 0.58,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 34.53,
+                "temperature": 114,
+                "toggleAt": 0,
+                "voltage": 242.4
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T03:28:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "SkEI5lxSX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 109,
+                "toggleAt": 0,
+                "voltage": 242.68
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T03:43:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "H1I0TxlBX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 104,
+                "toggleAt": 0,
+                "voltage": 242.04
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T03:58:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "Sk2I-ZlB7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 100,
+                "toggleAt": 0,
+                "voltage": 242.92
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T04:13:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "HkJkH-lBQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 0,
+                "temperature": 98,
+                "toggleAt": 0,
+                "voltage": 243.27
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T04:28:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "HJQP_-gSm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 96,
+                "toggleAt": 0,
+                "voltage": 241.31
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T04:43:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "ryuyhbxBQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 95,
+                "toggleAt": 0,
+                "voltage": 240.16
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T04:58:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "SJ2wkMeBQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 94,
+                "toggleAt": 0,
+                "voltage": 239.55
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T05:13:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "SyylQflrX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 93,
+                "toggleAt": 0,
+                "voltage": 242.33
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T05:28:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "r1MdUflS7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 92,
+                "toggleAt": 0,
+                "voltage": 243.68
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T05:43:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "B1Dxcflrm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 92,
+                "toggleAt": 0,
+                "voltage": 243.18
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T05:58:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "rJouafgBX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 243.88
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T06:13:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "Bk0eWmxHX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 240.28
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T06:28:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "BkQtVmxSm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 241.32
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T06:43:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "SJd-O7erQ",
+            "info": {
+                "current": 1.44,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 84.62,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 239.88
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T06:58:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "B13Ko7eHQ",
+            "info": {
+                "current": 2.08,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 122.87,
+                "temperature": 97,
+                "toggleAt": 0,
+                "voltage": 239.16
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T07:13:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "Bkkfk4gHm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 97,
+                "toggleAt": 0,
+                "voltage": 241.7
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T07:28:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "rJNcfNgrX",
+            "info": {
+                "current": 2.59,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 153.96,
+                "temperature": 97,
+                "toggleAt": 0,
+                "voltage": 239.6
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T07:43:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "HyDMLNeBQ",
+            "info": {
+                "current": 0.24,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 13.98,
+                "temperature": 99,
+                "toggleAt": 0,
+                "voltage": 243.04
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T07:58:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "rJictExH7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 0,
+                "temperature": 97,
+                "toggleAt": 0,
+                "voltage": 242.95
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T08:13:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "rJkXpVeHQ",
+            "info": {
+                "current": 0.6,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 35.45,
+                "temperature": 95,
+                "toggleAt": 0,
+                "voltage": 242.34
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T08:28:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "H14oxSlBQ",
+            "info": {
+                "current": 2.7,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 160.15,
+                "temperature": 98,
+                "toggleAt": 0,
+                "voltage": 238.23
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T08:43:11.000Z",
+            "device": "HyErn3Blm",
+            "id": "rkIQVSeBm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.02,
+                "on": true,
+                "power": 0,
+                "temperature": 99,
+                "toggleAt": 0,
+                "voltage": 241.33
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T08:58:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "Bk9jDHgHQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 96,
+                "toggleAt": 0,
+                "voltage": 242.65
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T09:13:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "ByJEoSxSQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 94,
+                "toggleAt": 0,
+                "voltage": 243.52
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T09:28:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "Skm20BxBX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 93,
+                "toggleAt": 0,
+                "voltage": 243.33
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T09:43:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "S1INz8xSQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 92,
+                "toggleAt": 0,
+                "voltage": 245.07
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T09:58:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "H1o2SLxSQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 244.42
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T10:13:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "SykBKIgr7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 244.76
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T10:28:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "ByXp2LlSm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 246.61
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T10:43:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "SkuBewgSQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 0,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 246.18
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T10:58:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "r1iT7wgrX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 91,
+                "toggleAt": 0,
+                "voltage": 246.28
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T11:13:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "BJeIDDeHm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 246.45
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T11:28:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "rJQC5wxH7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 246.49
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T11:43:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "Bkv8CvgHQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 246.65
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T11:58:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "SJi0-dgrX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 245.42
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T12:13:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "B11wrOxHQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 245.94
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T12:28:12.000Z",
+            "device": "HyErn3Blm",
+            "id": "r1mktueHm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 246.96
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T12:43:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "r1dPhOeHX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 247.06
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T12:58:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "ByikeFgBX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 247.25
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T13:13:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "BkyO7Yxr7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 247.06
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T13:28:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "H1QeDKxSQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 247.28
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T13:43:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "SydOqtlrQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 247.31
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T13:58:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "Bk9xAYeSm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 247.14
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T14:13:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "Bk1Yb5grX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 244.53
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T14:28:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "HJGWH9erQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 244.08
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T14:43:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "H1Ltd5eH7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 89,
+                "toggleAt": 0,
+                "voltage": 243.81
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T14:58:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "S1i-29lSX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 89,
+                "toggleAt": 0,
+                "voltage": 244.3
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T15:13:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "ry19kseHQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 89,
+                "toggleAt": 0,
+                "voltage": 245.96
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T15:28:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "BJNzmigBQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 88,
+                "toggleAt": 0,
+                "voltage": 244.59
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T15:43:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "HJU5Loerm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 88,
+                "toggleAt": 0,
+                "voltage": 244.04
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T15:58:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "ByizcoeHm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 88,
+                "toggleAt": 0,
+                "voltage": 244.32
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T16:13:13.000Z",
+            "device": "HyErn3Blm",
+            "id": "ByeiajlBX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 88,
+                "toggleAt": 0,
+                "voltage": 244.84
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T16:28:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "S1XmW2eBm",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 0,
+                "temperature": 88,
+                "toggleAt": 0,
+                "voltage": 245.05
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T16:43:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "Sy_j43grX",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 0,
+                "temperature": 88,
+                "toggleAt": 0,
+                "voltage": 245.95
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T16:58:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "H1iQdnxB7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 88,
+                "toggleAt": 0,
+                "voltage": 246.47
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T17:13:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "Sk1hoheSX",
+            "info": {
+                "current": 0.75,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 44.7,
+                "temperature": 89,
+                "toggleAt": 0,
+                "voltage": 243.34
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T17:28:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "SkQ4JplrQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0.01,
+                "temperature": 90,
+                "toggleAt": 0,
+                "voltage": 243.76
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T17:43:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "H1dhMpeBm",
+            "info": {
+                "current": 3.26,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 195.29,
+                "temperature": 93,
+                "toggleAt": 0,
+                "voltage": 240.69
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T17:58:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "BkiV86gSQ",
+            "info": {
+                "current": 0.02,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 1.09,
+                "temperature": 97,
+                "toggleAt": 0,
+                "voltage": 245.35
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T18:13:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "Hkb6FTgBQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 95,
+                "toggleAt": 0,
+                "voltage": 244.74
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T18:28:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "rJVSpTxHQ",
+            "info": {
+                "current": 2.12,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 126.75,
+                "temperature": 94,
+                "toggleAt": 0,
+                "voltage": 241.57
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T18:43:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "S1daxAlHm",
+            "info": {
+                "current": 0.19,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60.01,
+                "on": true,
+                "power": 11.39,
+                "temperature": 97,
+                "toggleAt": 0,
+                "voltage": 244.88
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T18:58:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "BkjSECgrQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 96,
+                "toggleAt": 0,
+                "voltage": 245.78
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T19:13:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "Hkl0wAlSQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 94,
+                "toggleAt": 0,
+                "voltage": 245.52
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
+        },
+        {
+            "date": "2018-08-02T19:28:14.000Z",
+            "device": "HyErn3Blm",
+            "id": "BJE8sRgBQ",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 59.99,
+                "on": true,
+                "power": 0,
+                "temperature": 93,
+                "toggleAt": 0,
+                "voltage": 245.36
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
         }
     ]
 }

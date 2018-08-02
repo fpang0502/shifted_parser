@@ -47,8 +47,10 @@ def writeIncrements(device, current, power, local_date, local_time, timezone):
 		time = date_time[1].split(':')
 		utcToday_dt = datetime.datetime(int(date[0]),int(date[1]),int(date[2]),int(time[0]),int(time[1]),int(time[2]), tzinfo=pytz.utc)
 		locToday_dt = utcToday_dt.astimezone(pytz.timezone(timezone))
+		yesterday_dt = (locToday_dt + datetime.timedelta(days=-1))
+		yesterday = yesterday_dt.strftime(fmtDate)
 		locToday = locToday_dt.strftime(fmtDate)
-		if orderedDates[x] == locToday:
+		if orderedDates[x] == locToday or orderedDates[x] == yesterday:
 			Fout = "./" + device + "/increments/" + device + "-" + orderedDates[x] + ".db"
 			with open(Fout, 'w+') as wfile:
 				hour=0

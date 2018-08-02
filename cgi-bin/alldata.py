@@ -1,4 +1,3 @@
-
 import json, requests, pytz, datetime
 from increments import getIncrements
 
