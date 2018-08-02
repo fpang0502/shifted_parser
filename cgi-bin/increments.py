@@ -1,3 +1,4 @@
+
 import json, datetime, pytz
 
 def getIncrements(device, timezone):
@@ -53,13 +54,15 @@ def writeIncrements(device, current, power, local_date, local_time, timezone):
 		if orderedDates[x] == locToday or orderedDates[x] == yesterday:
 			Fout = "./" + device + "/increments/" + device + "-" + orderedDates[x] + ".db"
 			with open(Fout, 'w+') as wfile:
+				wfile.write("localDate\tlocalTime\tslots\tcurrent\tkWh\n")
 				hour=0
 				minutes=0
 				listToWrite = []
 				for y in range(len(local_date)):
 					if orderedDates[x] == local_date[y]:
 						stringToWrite = local_date[y] +'\t'+ local_time[y] +'\t'+ str(hour).zfill(2) +":"+ str(minutes).zfill(2) +'\t'+ str(current[y]) +'\t'+ str(power[y]) +'\n'
-						listToWrite.append(stringToWrite)
+						#listToWrite.append(stringToWrite)
+						wfile.write(stringToWrite)
 						minutes +=15
 						if minutes >=60:
 							minutes = 0
@@ -67,10 +70,8 @@ def writeIncrements(device, current, power, local_date, local_time, timezone):
 							if hour >23:
 								hour = 0
 						dateCount+=1
-				#if len(listToWrite) < 96:
-				wfile.write("localDate\tlocalTime\tslots\tcurrent\tkWh\n")
-				for i in range(len(listToWrite)):
-					wfile.write(listToWrite[i])
+				# for i in range(len(listToWrite)):
+				# 	wfile.write(listToWrite[i])
 			print(orderedDates[x], dateCount)
 			dateCount=0
 

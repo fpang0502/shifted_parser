@@ -1,3 +1,5 @@
+
+
 import json, requests, pytz, datetime
 from increments import getIncrements
 
@@ -71,6 +73,8 @@ def collectData(device, timezone, startDate, endDate):
 				triggerArray.append(tempTrigger)
 		writeUpdates(device, updateString, updateFile, updateArray, timezone)
 		writeRelays(device, relayString, relayFile, relayArray, triggerArray, timezone)
+		updateFile.close()
+		relayFile.close()
 
 def writeUpdates(device, updateString, updateFile, updateArray, timezone):
 	# Write the update array to deal with duplicates
