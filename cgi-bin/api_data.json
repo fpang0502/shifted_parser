@@ -1961,6 +1961,25 @@
             "reason": "auto",
             "state": "Active",
             "type": "update"
+        },
+        {
+            "date": "2018-08-02T01:58:10.000Z",
+            "device": "HyErn3Blm",
+            "id": "HJcNrklS7",
+            "info": {
+                "current": 0,
+                "duration": 900,
+                "flow": null,
+                "frequency": 60,
+                "on": true,
+                "power": 0,
+                "temperature": 97,
+                "toggleAt": 0,
+                "voltage": 246.51
+            },
+            "reason": "auto",
+            "state": "Active",
+            "type": "update"
         }
     ]
 }

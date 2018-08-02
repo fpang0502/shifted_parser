@@ -26,8 +26,9 @@ def main():
 				twoDaysAhead_dt = (locToday_dt + datetime.timedelta(days=2))
 				twoDaysAhead = twoDaysAhead_dt.strftime(fmtDate)
 				collectData(device, specifiedTimezone, lastUpdated, twoDaysAhead)
-				getIncrements(device)
+				getIncrements(device, specifiedTimezone)
 				updateInputMaster(device, locToday)
+
 
 def update_data(device, startDate, endDate):
 	# Update the json_data with the respective date given
@@ -184,6 +185,9 @@ def matchToTrigger(utcTime, triggerArray):
 
 def getLocalDateTime(utc, timezone, option):
 	# Return the local date or time given UTC
+	fmt = '%Y-%m-%d %H:%M:%S'
+	fmtDate = '%Y-%m-%d'
+	fmtTime = '%H:%M:%S'
 	utc = utc.replace(".000Z", "")
 	date_time = utc.split("T")
 	#print(date_time)
@@ -191,8 +195,8 @@ def getLocalDateTime(utc, timezone, option):
 	time = date_time[1].split(":")
 	utc_dt = datetime.datetime(int(date[0]), int(date[1]), int(date[2]), int(time[0]), int(time[1]), int(time[2]), tzinfo=pytz.utc)
 	local_dt = utc_dt.astimezone(pytz.timezone(timezone))
-	local_date = local_dt.strftime('%Y-%m-%d')
-	local_time = local_dt.strftime('%H:%M:%S')
+	local_date = local_dt.strftime(fmtDate)
+	local_time = local_dt.strftime(fmtTime)
 	#print(local_date)
 	#print(local_time)
 	#print(local_date, local_time, '\n')
