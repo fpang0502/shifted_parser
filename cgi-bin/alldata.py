@@ -1,3 +1,4 @@
+
 import json, requests, pytz, datetime
 from increments import getIncrements
 
@@ -24,8 +25,6 @@ def main():
 				locToday = locToday_dt.strftime(fmtDate)
 				twoDaysAhead_dt = (locToday_dt + datetime.timedelta(days=2))
 				twoDaysAhead = twoDaysAhead_dt.strftime(fmtDate)
-				print(locToday)
-				print(twoDaysAhead)
 				collectData(device, specifiedTimezone, lastUpdated, twoDaysAhead)
 				getIncrements(device)
 				updateInputMaster(device, locToday)
