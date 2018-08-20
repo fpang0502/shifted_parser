@@ -42,7 +42,7 @@ def update_data(device, startDate, endDate):
 	Update the json_data with the respective date given
 	'''
 	headers = {
-	    'Authorization': 'Bearer: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6InJKZVBud3JRUSIsImV4cCI6MTU2Mjk3NjIxNiwiaWF0IjoxNTMxNDQwMjE2fQ.hmngHavclf9WTvrzn846yP3xRGbYSDEIRovcFw9KlrY',
+	    'Authorization': 'Bearer: REDACTED',
 	    'Content-Type': 'application/json',
 	}
 	url = "https://api.automategreen.com/v1/statuses?device=" + device

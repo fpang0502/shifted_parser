@@ -1,1 +1,2 @@
 deviceID	reasonOff	reasonOn	UTC	dateOff	dateOn	timeOff	timeOn	tripFreq	tripTime	returnFreq	returnTime
+No relays were found within the given date period so this line is empty
