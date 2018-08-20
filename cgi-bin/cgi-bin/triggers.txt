@@ -1,1 +1,0 @@
-deviceID	localDate	localTime	frequency	UTC

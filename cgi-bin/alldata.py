@@ -1,9 +1,15 @@
 
-
-import json, requests, pytz, datetime
+import os, json, requests, pytz, datetime
 from increments import getIncrements
 
 def main():
+	'''
+	Main function reads the input-master file and does the following for each device:
+		Collects data for the current
+		Formats it for the master file
+		Formats it for the 15 increment file
+		Updates the input-master file with last updated date
+	'''
 	with open("input-master.db", "r+") as input:
 		title = input.readline()
 		entireFile = input.read()
@@ -32,7 +38,9 @@ def main():
 
 
 def update_data(device, startDate, endDate):
-	# Update the json_data with the respective date given
+	'''
+	Update the json_data with the respective date given
+	'''
 	headers = {
 	    'Authorization': 'Bearer: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6InJKZVBud3JRUSIsImV4cCI6MTU2Mjk3NjIxNiwiaWF0IjoxNTMxNDQwMjE2fQ.hmngHavclf9WTvrzn846yP3xRGbYSDEIRovcFw9KlrY',
 	    'Content-Type': 'application/json',
@@ -45,40 +53,55 @@ def update_data(device, startDate, endDate):
 		json.dump(json_data, f, indent=4, sort_keys=True)
 
 def collectData(device, timezone, startDate, endDate):
+	'''
+	Collects the data and writes the master file with each specific case:
+	status update, relay, or trigger (ffr)
+	'''
 	update_data(device, startDate, endDate)
 
 	with open("api_data.json", "r") as data:
 		json_data = json.load(data)
-		updateString = "./" + device + "/" + device + "updates.db"
-		updateFile = open(updateString, "a")
-		relayString = "./" + device + "/" + device + "relays.db"
-		relayFile = open(relayString, "a")
+		updateString = "./devices/" + device + "/" + device + "updates.db"
+		relayString = "./devices/" + device + "/" + device + "relays.db"
+		if os.path.isdir("devices/" + device):
+			updateFile = open(updateString, "a+")
+			relayFile = open(relayString, "a+")
+		else:
+			os.makedirs("./devices/" + device)
+			updateFile = open(updateString, "w+")
+			updateFile.write("deviceID\tflowData\tcurrent\twatthourData\tlocalDate\tlocalTime\tUTCtime\n")
+			relayFile = open(relayString, "w+")
+			relayFile.write("deviceID\treasonOff\treasonOn\tUTC\tdateOff\tdateOn\ttimeOff\ttimeOn\ttripFreq\ttripTime\treturnFreq\treturnTime\n")
 		updateArray=[]
 		relayArray=[]
 		triggerArray=[]
 		for i in range(len(json_data["statuses"])):
-			if json_data["statuses"][i]["type"] == "update":
-				# Append all the updates
-				tempUpdate = json_data["statuses"][i]
-				updateArray.append(tempUpdate)
+			try:
+				if json_data["statuses"][i]["type"] == "update":
+					# Append all the updates
+					tempUpdate = json_data["statuses"][i]
+					updateArray.append(tempUpdate)
 
-			elif json_data["statuses"][i]["type"] == "relay":
-				# Append all the relays
-				tempRelay = json_data["statuses"][i]
-				relayArray.append(tempRelay)
+				elif json_data["statuses"][i]["type"] == "relay":
+					# Append all the relays
+					tempRelay = json_data["statuses"][i]
+					relayArray.append(tempRelay)
 
-			elif json_data["statuses"][i]["type"] == "trigger":
-				# Append all the triggers
-				tempTrigger = json_data["statuses"][i]
-				triggerArray.append(tempTrigger)
+				elif json_data["statuses"][i]["type"] == "trigger":
+					# Append all the triggers
+					tempTrigger = json_data["statuses"][i]
+					triggerArray.append(tempTrigger)
+			except:
+				print("I failed at: ", json_data["statuses"][i])
 		writeUpdates(device, updateString, updateFile, updateArray, timezone)
 		writeRelays(device, relayString, relayFile, relayArray, triggerArray, timezone)
 		updateFile.close()
 		relayFile.close()
 
 def writeUpdates(device, updateString, updateFile, updateArray, timezone):
-	# Write the update array to deal with duplicates
-
+	'''
+	Write the update array to deal with duplicates
+	'''
 	for i in range(len(updateArray)):
 		utc = updateArray[i]["date"]
 		local_date = getLocalDateTime(utc, timezone, "date")
@@ -93,11 +116,13 @@ def writeUpdates(device, updateString, updateFile, updateArray, timezone):
 			power = updateArray[i]["info"]["power"]
 		textToSend = device +'\t'+ flow +'\t'+ str(current) +'\t'+ str(power) +'\t' + local_date +'\t'+ local_time +'\t'+ utc +'\n'
 
-		if isUnique(updateString, 192, textToSend):
+		if isUnique(updateString, 960, textToSend):
 			updateFile.write(textToSend)
 
 def writeRelays(device, relayString, outfile, relayArray, triggerArray, timezone):
-	# Write the relay array to deal with Emergency Events and FFR Events
+	'''
+	Write the relay array to deal with Emergency Events and FFR Events
+	'''
 	ffrEvent = False
 	emergencyEvent = False
 	eventOn = False
@@ -164,12 +189,18 @@ def writeRelays(device, relayString, outfile, relayArray, triggerArray, timezone
 					outfile.write(textToSend)
 
 def readLastLines(file, lines):
+	'''
+	Read the last 'lines' of the file fed to it
+	'''
 	with open(file, "r") as f:
 		f.readline()
 		contents = f.readlines()[-lines:]
 		return contents
 
 def isUnique(filename, lines, textToSend):
+	'''
+	Compares the lines of the file to the textToSend
+	'''
 	linesOfFile = readLastLines(filename, lines)
 	found = False
 	for i in range(len(linesOfFile)):
@@ -181,13 +212,17 @@ def isUnique(filename, lines, textToSend):
 		return False
 
 def matchToTrigger(utcTime, triggerArray):
-	# Match the given UTC time to the time in the trigger array
+	'''
+	Match the given UTC time to the time in the trigger array
+	'''
 	for i in range(len(triggerArray)):
 		if triggerArray[i]["date"] == utcTime:
 			return triggerArray[i]["info"]["frequency"]
 
 def getLocalDateTime(utc, timezone, option):
-	# Return the local date or time given UTC
+	'''
+	Return the local date or time given UTC using Pytz and Datetime modules
+	'''
 	fmt = '%Y-%m-%d %H:%M:%S'
 	fmtDate = '%Y-%m-%d'
 	fmtTime = '%H:%M:%S'
@@ -209,19 +244,23 @@ def getLocalDateTime(utc, timezone, option):
 		return local_time
 
 def updateInputMaster(device, lastUpdated):
+	'''
+	Update the input-master file with the last updated date
+	'''
 	entireText =''
 	with open("input-master.db", "r") as f:
 		title = f.readline()
 		entireText += title
-		devices = f.readlines()
-		for i in range(len(devices)):
-			if device in devices[i]:
-				temp = devices[i].strip('\n')
+		lines = f.readlines()
+		for i in range(len(lines)):
+			temp = lines[i].strip()
+			if device in temp:
 				indexes = temp.split()
-				temp = temp.replace(indexes[3], lastUpdated)
-				entireText += temp
+				indexes[3] = lastUpdated
+				lineOfText = '\t'.join(indexes)
+				entireText += lineOfText + '\n'
 			else:
-				entireText += devices[i]
+				entireText += temp +'\n'
 	with open("input-master.db", "w+") as f:
 		f.write(entireText)
 
